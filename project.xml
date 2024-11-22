@@ -1,0 +1,22 @@
+<project>
+    <haxelib name="openfl"/>
+    <haxelib name="format"/>
+    <haxelib name="trace-timer"/>
+    <haxelib name="random"/>
+    <haxelib name="slide"/>
+
+    <haxedef name="openfl_enable_experimental_update_queue"/>
+
+    <source path="Source"/>
+    <!-- <assets path="Assets" rename="assets"/> -->
+    <assets path="assets"/>
+
+    <window width="1024" height="768"/>
+    <!-- <window antialiasing="0" /> -->
+    <!-- <window allow-high-dpi="true"/> -->
+    <!-- <window allow-high-dpi="true" antialiasing="4" vsync="true" if="cpp || hl" /> -->
+    <window allow-high-dpi="false" antialiasing="0" vsync="true"/>
+    <!-- <architecture name="armv7" exclude="arm64" if="android" /> -->
+    <!-- <window width="1080" height="1920"/> -->
+	<config:ios deployment="12" />
+</project>
