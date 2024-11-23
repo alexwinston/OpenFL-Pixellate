@@ -14,6 +14,8 @@ Features:
 * PixelGraphics class that wraps a Bitmap texture and composites the Drawable commands using a custom OpenGL Shader
 * PixellateLayer class that exposes transformation properties per Drawable instance
 
+![Pixellate](https://raw.githubusercontent.com/alexwinston/OpenFL-Pixellate/refs/heads/main/example.png 'Pixellate')
+
 ## Demo
 The demo provides a myriad of examples for using multiple PixelGraphics to display and animate layers created with Drawable(s) by hand as well as using the Shapes class. Existing OpenFL Shader support is demonstrated to work as well alongside Pixellate.
 ```shell
