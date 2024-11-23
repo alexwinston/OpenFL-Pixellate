@@ -69,7 +69,8 @@ var rectLayer = pg.pixellate(shapes.drawable);
 shapes.clear();
 shapes.rect(new Color({ stroke:rgba(100,20,60), fill:rgba(0,0,0,0.4) }), 0, 0, 50, 20, 3);
 
-// This layer is seperate from the previous pixellated Drawable instance because clear was called to reset the Shapes class. A seperate buffer is created per Drawable by the PixelGraphics class.
+// This layer is seperate from the previous pixellated Drawable instance because clear was called to reset the Shapes class.
+// A seperate buffer is created per Drawable by the PixelGraphics class.
 var rectLayer2 = pg.pixellate(shapes.drawable);
 
 ```
@@ -77,7 +78,8 @@ var rectLayer2 = pg.pixellate(shapes.drawable);
 It should be noted that because Drawable(s) meshes are similar to typical 3d object meshes care should be taken regarding the intial position the points are configured at.  It is suggested that using 0,0 as the underlying Drawable upper left position in order to more easily transform PixellateLayer(s). However if the desired mesh points are not likely to change configuring the points to the desired position directly is supported.
 
 ```haxe
-// Here the rectangle points are set from the starting position of 100,100.  Subsequent PixellateLayer transforms will need to account for the original position.
+// Here the rectangle points are set from the starting position of 100,100.
+// Subsequent PixellateLayer transforms will need to account for the original position.
 shapes.rect(new Color({ stroke:rgba(100,20,60), fill:rgba(0,0,0,0.4) }), 100, 100, 50, 20, 3);
 ```
 
