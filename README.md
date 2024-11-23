@@ -48,7 +48,7 @@ pixelGraphics.x = 0;
 pixelGraphics.y = 0;
 pixelGraphics.scaleX = 2;
 pixelGraphics.scaleY = 2;
-addChild(this.g);
+addChild(pixelGraphics);
 
 var triangleLayer = pixelGraphics.pixellate(drawable);
 triangleLayer.translate.setTo(100, 100);
