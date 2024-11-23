@@ -106,13 +106,13 @@ class Main extends Sprite {
 		for (i in 0...15) {
 			this.pixellateF(f);
 		}
+		var ts2:Float = haxe.Timer.stamp();
 		trace('PixelGraphics: ${ts2 - ts1}');
 
 		// Add the custom L Drawable which demonstrates using a different Mode
 		var l = this.g.pixellate(l);
 		l.translate.setTo(5,100);
 		l.shear.setTo(-1, 0);
-		var ts2:Float = haxe.Timer.stamp();
 
 		// Add a Bitmap with an OpenFL Shader to demonstrate support for existing functionality
 		this.img2 = new Bitmap(Assets.getBitmapData("assets/slice.png"));
